@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-frida010-codechef-creati-hbxdk2qii1.us2.codeanyapp.com',
-                 'https://git.heroku.com/codechef-creations.git', 'localhost']
+                 'codechef-creations-aedba97ffd5b.herokuapp.com', 'localhost']
 
 
 # Application definition
