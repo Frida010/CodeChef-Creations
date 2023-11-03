@@ -33,6 +33,9 @@ ALLOWED_HOSTS = ['8000-frida010-codechef-creati-hbxdk2qii1.us2.codeanyapp.com',
                  'codechef-creations-aedba97ffd5b.herokuapp.com', 'localhost']
 
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,12 +44,21 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
     'chefblog',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,6 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware'
 ]
 
 ROOT_URLCONF = 'codechefcreations.urls'
