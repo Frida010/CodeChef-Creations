@@ -42,10 +42,10 @@ main-bg {
 /* Define styles for an 'image-flash' element */
 .image-flash {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     min-width: 30%;
     left: -2px;
-    background-color: #445261;
+    background-color: #6b8e23;
 }
 
 .card-img-top {
@@ -83,21 +83,26 @@ main-bg {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #6b8e23;
+}
+
+.post-card-img-top,
+.card-img-top {
+    border-radius: 10%;
 }
 
 .link {
-    color: #445261;
+    color: #6b8e23;
     text-decoration: none;
 }
 
 /* Sign In link styles */
-.link-signin {
-    color: #445261;
+.my-link {
+    color: #6b8e23;
     text-decoration: underline;
 }
 
-.link-signin:hover {
+.my-link:hover {
     color: #808994;
 }
 
@@ -105,7 +110,7 @@ main-bg {
 /* Define styles for 'Sign Up' and 'Sign Out' buttons */
 .btn-signup,
 .btn-signout {
-    background-color: #445261;
+    background-color: #6b8e23;
     color: #fff;
 }
 
@@ -115,7 +120,7 @@ main-bg {
 .btn-signout:hover,
 .btn-signout:active {
     background-color: #fff;
-    color: #445261;
+    color: #6b8e23;
 }
 
 /* Like button styles */
@@ -143,3 +148,4 @@ main-bg {
         width: auto;
     }
 }
+

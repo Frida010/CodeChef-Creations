@@ -14,7 +14,7 @@
         <div class="col-md-8 mt-3 offset-md-2">
             <h3>{% trans "Sign Up" %}</h3>
             <p>
-                {% blocktrans %}Already have an account? Then please <a class="link link-signin" href="{{ login_url }}">sign
+                {% blocktrans %}Already have an account? Then please <a class="link my-link" href="{{ login_url }}">sign
                     in</a>.{% endblocktrans %}
             </p>
             {% url 'account_signup' as action_url %}
@@ -24,6 +24,8 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
                 {% endif %}
+                <div style="height: 20px;"></div>
+
                 <button class="btn btn-signup right" type="submit">{% trans "Sign Up" %}</button>
             </form>
             {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
