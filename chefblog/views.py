@@ -1,8 +1,21 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Category
 from .forms import CommentForm
+
+
+class PostsByCategory(generic.ListView):
+    model = Post
+    template_name = 'posts_by_category.html'
+    context_object_name = 'posts'
+
+    def get_queryset(self):
+        category = self.kwargs['category']
+        if category == 'all':
+            return Post.objects.filter(status=1).order_by('-created_on')
+        else:
+            return Post.objects.filter(categories__name=category, status=1).order_by('-created_on')
 
 
 class PostList(generic.ListView):
@@ -76,3 +89,8 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+def category_list(request):
+    categories = Category.objects.all()
+    return render(request, 'category_list.html', {'categories': categories})
