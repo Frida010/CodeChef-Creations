@@ -1,7 +1,11 @@
+/* Background styles */
+/* Set background color for entire page */
 body {
     background-color: #F9FAFC;
 }
 
+/* Brand or logo styles */
+/* Define style for brand or logo element */
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -9,14 +13,7 @@ body {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
+/* Background colors */
 .light-bg {
     background-color: #fff;
 }
@@ -25,35 +22,44 @@ body {
     background-color: #445261;
 }
 
-.main-bg {
+main-bg {
     background-color: #F9FAFC;
 }
 
+/* Card styles */
+/* Define styles for elements with the 'card' class */
 .card {
     border: none;
     background-color: transparent;
 }
 
+/* Image styles */
+/* Define styles for an image container */
 .image-container {
     position: relative;
 }
 
+/* Define styles for an 'image-flash' element */
 .image-flash {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #445261;
 }
 
+/* Author styles */
+/* Define styles for an author's name */
 .author {
     color: white;
     margin: 4px;
     text-transform: uppercase;
 }
 
+/* Masthead styles */
+/* Define styles for the masthead section at the top of the page */
 .masthead {
-    margin-top: 10px;
+    margin-top: 50px;
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -61,17 +67,22 @@ body {
     width: 100%;
 }
 
+/* Masthead text styles */
+/* Define styles for text within the masthead section */
 .masthead-text {
     background-color: #445261;
     color: white;
     position: relative;
 }
 
+/* Masthead image styles */
+/* Define styles for an image within the masthead section */
 .masthead-image {
     position: relative;
     overflow: hidden;
 }
 
+/* Create a pseudo-element to overlay the masthead image */
 .masthead-image:after {
     content: "";
     position: absolute;
@@ -86,16 +97,20 @@ body {
     z-index: 100;
 }
 
+/* Link styles */
+/* Define styles for post links */
 .post-link {
     text-decoration: none;
     color: #445261;
 }
 
+/* Define styles for post links on hover and other page links */
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #808994;
 }
 
+/* Define styles for post titles and subtitles */
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
@@ -106,37 +121,50 @@ body {
     color: lightgray;
 }
 
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
 .link {
-    color: #23BBBB;
+    color: #445261;
     text-decoration: none;
 }
 
-.link:hover,
-.link:active {
+/* Sign In link styles */
+.link-signin {
     color: #445261;
     text-decoration: underline;
 }
 
+.link-signin:hover {
+    color: #808994;
+}
+
+/* Button styles */
+/* Define styles for 'Sign Up' and 'Sign Out' buttons */
+.btn-signup,
+.btn-signout {
+    background-color: #445261;
+    color: #fff;
+}
+
+/* Define styles for the 'Sign Up' and 'Sign Out' buttons on hover and when active */
+.btn-signup:hover,
+.btn-signup:active,
+.btn-signout:hover,
+.btn-signout:active {
+    background-color: #fff;
+    color: #445261;
+}
+
+/* Like button styles */
+/* Define styles for 'Like' buttons */
 .btn-like {
-    color: #E84610;
+    color: #e81010;
     border: none;
     background: transparent;
 }
 
+/* Define styles for 'Like' buttons on hover and when active */
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #e81010;
     background: transparent;
     border: none;
 }
