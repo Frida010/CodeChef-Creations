@@ -48,53 +48,18 @@ main-bg {
     background-color: #445261;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 700px; 
+}
+
+
 /* Author styles */
 /* Define styles for an author's name */
 .author {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-}
-
-/* Masthead styles */
-/* Define styles for the masthead section at the top of the page */
-.masthead {
-    margin-top: 50px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-/* Masthead text styles */
-/* Define styles for text within the masthead section */
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-/* Masthead image styles */
-/* Define styles for an image within the masthead section */
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-/* Create a pseudo-element to overlay the masthead image */
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
 }
 
 /* Link styles */
@@ -167,4 +132,14 @@ main-bg {
     color: #e81010;
     background: transparent;
     border: none;
+}
+
+.my-row {
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .col-md-12 {
+        width: auto;
+    }
 }
