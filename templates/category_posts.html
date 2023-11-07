@@ -1,23 +1,12 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block page_content %}
 <h1>Posts in Category: {{ selected_category }}</h1>
 
 <ul>
     {% for category in categories %}
-    <li><a href="{% url 'posts_by_category' category_name=category.name %}">{{ category.name }}</a></li>
+    <li><a href="{% url 'category_detail' category_name=category.name %}">{{ category.name }}</a></li>
     {% endfor %}
 </ul>
 
-<div class="post-list">
-    {% for post in posts %}
-    <div class="post">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.content }}</p>
-        
-    </div>
-    {% empty %}
-    <p>No posts in this category.</p>
-    {% endfor %}
-</div>
 {% endblock %}

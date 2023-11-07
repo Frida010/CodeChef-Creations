@@ -36,8 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li>
-                    <a class="nav-link" href="{% url 'posts_by_category' category_name='all' %}">All Categories</a>
- 
+                    <a class="nav-link" href="{% url 'category_posts' category_name='all' %}">All Categories</a>
                     </li>
                     
                     {% if user.is_authenticated %}
@@ -57,6 +56,10 @@
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        {% block page_content %}{% endblock %}
+    </div>
 
     <div class="container">
         <div class="row">
