@@ -35,9 +35,11 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'posts_by_category' category='default' %}">All Categories</a>
+                    <li>
+                    <a class="nav-link" href="{% url 'posts_by_category' category_name='all' %}">All Categories</a>
+ 
                     </li>
+                    
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
@@ -73,12 +75,6 @@
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
-        {% if user.is_authenticated %}
-
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'posts_by_category' category='all' %}">All Categories</a>
-        </li>
-        {% endif %}
     </main>
 
     <!-- Footer -->
