@@ -143,6 +143,11 @@ main-bg {
     padding-top: 10px;
 }
 
+.my-category-name,
+.my-post-title {
+    color: #6b8e23;
+}
+
 @media (min-width: 768px) {
     .col-md-12 {
         width: auto;
