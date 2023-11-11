@@ -1,39 +1,44 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# CodeChef Creations
 
-Welcome,
+Welcome to CodeChef Creations, on this Django-based blogging website you will be albe to read posts/recipes that the **CodeChef** uploads on the blog. 
+The application gives the website visitor the opportunity to read blog posts with healthy recipes, in order to be able to code all day. 
+The recipes are adapted to code, and contain references and style you recognize if you are familiar with programming. 
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Getting Started
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+To use CodeChef Creations, you don't need an account. However, if you want to engage with other users and leave comments or like posts, you can create your own account.
 
-## Codeanywhere Reminders
+### Steps to get started:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+1. Navigate to the CodeChef Creations website.
+2. Browse through the various posts available on the website.
+3. Click on any post that interests you to read more about it.
+4. If you want to engage with other users, sign up for an account so you can leave comments and like posts.
+5. If you are interested in a specific type of blog post, such as Heatly salads, you can check out that category and find something you like. 
 
-`python3 -m http.server`
+## Features
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* No login required for browsing through posts.
+* User authentication system, enabling commenting and liking on posts.
+* Categories menu allows filtering of posts by relevant topics and interests.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
 
-`http_server`
+## Testing
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Bugs
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Solved bugs
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Remaining bugs
 
-To log into the Heroku toolbelt CLI:
+## Validator testing
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Deployment
+This project was deployed using Code Institute's terminal for Heroku.
+- **Steps for deployment:**
+  - Fork or clone this repository
+  - Create a new Heroku app
+  - Link the heroku app to the repository
+  - Click on **Deploy**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Credits
