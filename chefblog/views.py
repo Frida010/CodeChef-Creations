@@ -1,12 +1,38 @@
-from django.views import View
-from .models import Post
-from django.shortcuts import render, get_object_or_404
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic, View
-from django.http import HttpResponseRedirect
-from .models import Post, Category
-from .forms import CommentForm
+from django.views import View
 from django.views.generic import ListView
+from django.http import HttpResponseRedirect, JsonResponse
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
+from .models import Post, Category, SavedPost
+from .forms import CommentForm
+
+
+# @method_decorator(login_required, name='dispatch')
+# class SavePostView(View):
+#     def post(self, request, post_id):
+#         post = get_object_or_404(Post, pk=post_id)
+
+#         saved_post, created = SavedPost.objects.get_or_create(
+#             user=request.user, post=post)
+
+#         if not created:
+#             saved_post.delete()
+#             message = "Post borttagen från sparade."
+#         else:
+#             message = "Post sparad."
+
+#         return JsonResponse({'message': message})
+
+
+# @method_decorator(login_required, name='dispatch')
+# class SavedPostsView(ListView):
+#     model = SavedPost
+#     template_name = 'saved_posts.html'
+#     context_object_name = 'saved_posts'
+
+#     def get_queryset(self):
+#         return SavedPost.objects.filter(user=self.request.user)
 
 
 class CategoryListView(ListView):
@@ -43,7 +69,7 @@ class CategoryDetailView(ListView):
         return context
 
 
-class PostList(generic.ListView):
+class PostList(ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
@@ -51,7 +77,7 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-    template_name = "post_detail.html" 
+    template_name = "post_detail.html"
 
     def get(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
@@ -68,7 +94,7 @@ class PostDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm() 
+                "comment_form": CommentForm()
             },
         )
 
@@ -101,8 +127,8 @@ class PostDetail(View):
             },
         )
 
-class PostLike(View):
 
+class PostLike(View):
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
