@@ -8,31 +8,19 @@ from .models import Post, Category, SavedPost
 from .forms import CommentForm
 
 
-# @method_decorator(login_required, name='dispatch')
-# class SavePostView(View):
-#     def post(self, request, post_id):
-#         post = get_object_or_404(Post, pk=post_id)
+@login_required
+def toggle_saved(request, post_id):
+    post = get_object_or_404(Post, pk=post_id)
+    user = request.user
 
-#         saved_post, created = SavedPost.objects.get_or_create(
-#             user=request.user, post=post)
+    # Kolla om användaren redan har sparad posten
+    saved_post, created = SavedPost.objects.get_or_create(user=user, post=post)
 
-#         if not created:
-#             saved_post.delete()
-#             message = "Post borttagen från sparade."
-#         else:
-#             message = "Post sparad."
+    if not created:
+        # Om posten redan är sparad, ta bort den
+        saved_post.delete()
 
-#         return JsonResponse({'message': message})
-
-
-# @method_decorator(login_required, name='dispatch')
-# class SavedPostsView(ListView):
-#     model = SavedPost
-#     template_name = 'saved_posts.html'
-#     context_object_name = 'saved_posts'
-
-#     def get_queryset(self):
-#         return SavedPost.objects.filter(user=self.request.user)
+    return redirect('post_detail', pk=post_id)
 
 
 class CategoryListView(ListView):
