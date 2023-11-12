@@ -5,7 +5,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 my-col-md-12">
-            <!-- Post title and author as a heading -->
             <div class="masthead">
                 <div class="masthead-text">
                     <h1 class="post-title">{{ post.title }}</h1>
@@ -17,7 +16,6 @@
 
     <div class="row">
         <div class="col-md-6">
-            <!-- Masthead section with featured image -->
             <div class="masthead">
                 <div class="image-container">
                     {% if "placeholder" in post.featured_image.url %}
@@ -29,7 +27,6 @@
             </div>
         </div>
         <div class="col-md-6">
-            <!-- Content section -->
             <div class="card mb-4 mt-3 left top">
                 <div class="card-body">
                     <p class="card-text">
@@ -45,31 +42,36 @@
                                         <i class="{% if liked %}fas{% else %}far{% endif %} fa-heart"></i>
                                     </button>
                                 </form>
-                                
-                                <a href="{% url 'toggle_saved' post.id %}" class="{% if saved_post %}saved{% else %}not-saved{% endif %}">
-                                    {% if saved_post %}
-                                    <i class="fa-solid fa-bookmark"></i>
-                                    {% else %}
-                                    <i class="fa-regular fa-bookmark"></i>
-                                    {% endif %}
-                                </a>
-                                
                                 {% else %}
                                 <span class="text-secondary"><i class="far fa-heart"></i></span>
                                 {% endif %}
-                                
-                                <!-- The number of likes goes before the closing strong tag -->
                                 <span class="text-secondary">{{ post.number_of_likes }} </span>
-
                             </strong>
                         </div>
                         <div class="col-1">
                             {% with comments.count as total_comments %}
                             <strong class="text-secondary"><i class="far fa-comments"></i>
-                                <!-- Our total_comments variable goes before the closing strong tag -->
                                 {{ total_comments }}</strong>
                             {% endwith %}
                         </div>
+
+                        <div class="col-1">
+                            <strong>
+                                {% if user.is_authenticated %}
+                                <form id="saveForm" class="d-inline" action="{% url 'toggle_saved' post.id %}" method="POST">
+                                    {% csrf_token %}
+                                    <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-save">
+                                        <i class="{% if saved_post %}fas{% else %}far{% endif %} fa-bookmark"></i>
+
+                                    </button>
+                                </form>
+                                {% else %}
+                                <span class="text-secondary"><i class="fa-regular fa-bookmark"></i></span>
+                                {% endif %}
+                            </strong>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -84,27 +86,21 @@
         <div class="col-md-8 card mb-4 mt-3">
             <h3>Comments:</h3>
             <div class="card-body">
-                <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
-                        <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
-                            <!-- The comment's created date goes here -->
                             {{ comment.created_on }}
                         </span> wrote:
                     </p>
-                    <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
                 </div>
-                <!-- Our for loop ends here -->
                 {% endfor %}
             </div>
         </div>
         <div class="col-md-4 card mb-4 mt-3">
             <div class="card-body">
-                <!-- For later -->
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
@@ -124,5 +120,17 @@
         </div>
     </div>
 </div>
+<script>
+    document.getElementById('saveForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var saveButton = this.querySelector('.btn-save');
+        var bookmarkIcon = saveButton.querySelector('i');
 
+        if (bookmarkIcon.classList.contains('fas')) {
+            bookmarkIcon.classList.replace('fas', 'far');
+        } else {
+            bookmarkIcon.classList.replace('far', 'fas');
+        }
+    });
+</script>
 {% endblock content %}

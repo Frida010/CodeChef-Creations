@@ -160,3 +160,28 @@ main-bg {
     }
 }
 
+/* Save button */
+
+.btn-save {
+    color: #808994;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-save:hover,
+.btn-save:active {
+    color: #4a611d;
+}
+
+.fa-bookmark {
+    font-size: 18px;
+}
+
+.saved .fa-bookmark {
+    color: #4a611d;
+}
+
+.not-saved .fa-bookmark {
+    color: #808994;
+}

@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import View
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect, JsonResponse
@@ -6,21 +6,26 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from .models import Post, Category, SavedPost
 from .forms import CommentForm
+from django.urls import reverse
 
 
 @login_required
 def toggle_saved(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
     user = request.user
-
-    # Kolla om användaren redan har sparad posten
     saved_post, created = SavedPost.objects.get_or_create(user=user, post=post)
 
     if not created:
-        # Om posten redan är sparad, ta bort den
         saved_post.delete()
 
-    return redirect('post_detail', pk=post_id)
+    url = reverse('post_detail', kwargs={'slug': post.slug})
+
+    return redirect(url)
+
+
+def saved_posts(request):
+    saved_posts = SavedPost.objects.filter(user=request.user)
+    return render(request, 'saved_posts.html', {'saved_posts': saved_posts})
 
 
 class CategoryListView(ListView):
