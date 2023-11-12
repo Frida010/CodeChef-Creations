@@ -58,19 +58,17 @@
                         <div class="col-1">
                             <strong>
                                 {% if user.is_authenticated %}
-                                <form id="saveForm" class="d-inline" action="{% url 'toggle_saved' post.id %}" method="POST">
+                                <form class="d-inline" action="{% url 'toggle_saved' post.id %}" method="POST" id="saveForm">
                                     {% csrf_token %}
                                     <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-save">
-                                        <i class="{% if saved_post %}fas{% else %}far{% endif %} fa-bookmark"></i>
-
+                                        <i id="bookmarkIcon" class="{% if saved_post %}fas{% else %}far{% endif %} fa-bookmark"></i>
                                     </button>
                                 </form>
                                 {% else %}
-                                <span class="text-secondary"><i class="fa-regular fa-bookmark"></i></span>
+                                <span class="text-secondary"><i class="far fa-bookmark"></i></span>
                                 {% endif %}
                             </strong>
                         </div>
-
 
                     </div>
                 </div>
@@ -121,16 +119,31 @@
     </div>
 </div>
 <script>
-    document.getElementById('saveForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        var saveButton = this.querySelector('.btn-save');
-        var bookmarkIcon = saveButton.querySelector('i');
+    $(document).ready(function () {
+        $('#saveForm').submit(function (e) {
+            e.preventDefault();
 
-        if (bookmarkIcon.classList.contains('fas')) {
-            bookmarkIcon.classList.replace('fas', 'far');
-        } else {
-            bookmarkIcon.classList.replace('far', 'fas');
-        }
+            var form = $(this);
+
+            $.ajax({
+                type: 'POST',
+                url: form.attr('action'),
+                data: form.serialize(),
+                success: function (response) {
+                    // Uppdatera knappen baserat på serverns svar
+                    var bookmarkIcon = form.find('.btn-save i');
+                    if (bookmarkIcon.hasClass('fas')) {
+                        bookmarkIcon.removeClass('fas').addClass('far');
+                    } else {
+                        bookmarkIcon.removeClass('far').addClass('fas');
+                    }
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        });
     });
 </script>
+
 {% endblock content %}
