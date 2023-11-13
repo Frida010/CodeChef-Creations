@@ -7,6 +7,7 @@ from django.utils.decorators import method_decorator
 from .models import Post, Category, SavedPost
 from .forms import CommentForm
 from django.urls import reverse
+from django.http import JsonResponse
 
 
 @login_required
@@ -18,9 +19,13 @@ def toggle_saved(request, post_id):
     if not created:
         saved_post.delete()
 
-    url = reverse('post_detail', kwargs={'slug': post.slug})
+    response_data = {
+        # Return True if created (post is saved), False otherwise
+        'saved': not created
+    }
 
-    return redirect(url)
+    return JsonResponse(response_data)
+
 
 
 def saved_posts(request):

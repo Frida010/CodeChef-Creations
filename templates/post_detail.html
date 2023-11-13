@@ -70,6 +70,7 @@
                             </strong>
                         </div>
 
+
                     </div>
                 </div>
             </div>
@@ -119,7 +120,7 @@
     </div>
 </div>
 <script>
-    $(document).ready(function () {
+   $(document).ready(function () {
         $('#saveForm').submit(function (e) {
             e.preventDefault();
 
@@ -130,12 +131,11 @@
                 url: form.attr('action'),
                 data: form.serialize(),
                 success: function (response) {
-                    // Uppdatera knappen baserat på serverns svar
                     var bookmarkIcon = form.find('.btn-save i');
-                    if (bookmarkIcon.hasClass('fas')) {
-                        bookmarkIcon.removeClass('fas').addClass('far');
-                    } else {
+                    if (response.saved) {
                         bookmarkIcon.removeClass('far').addClass('fas');
+                    } else {
+                        bookmarkIcon.removeClass('fas').addClass('far');
                     }
                 },
                 error: function (error) {
@@ -144,6 +144,7 @@
             });
         });
     });
+
 </script>
 
 {% endblock content %}
