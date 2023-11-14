@@ -236,3 +236,27 @@ main-bg {
     font-weight: 600;
     margin-bottom: 40px;
 }
+
+
+img.post-card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        max-height: 400px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
