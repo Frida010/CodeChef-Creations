@@ -2,22 +2,25 @@
 
 {% load i18n %}
 {% block head_title %}
-    {% trans "Sign Out" %}
+{% trans "Sign Out" %}
 {% endblock head_title %}
 
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <h3>{% trans "Sign Out" %}</h3>
-            <p>{% trans 'Are you sure you want to sign out from CodeChef Creations <i class="fa-solid fa-utensils"></i> ?' %}</p>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-8">
+            <div class="text-center">
+                <h3>{% trans "Sign Out" %}</h3>
+                <p>Are you sure you want to sign out from <strong>CodeChef Creations <i
+                        class="fa-solid fa-utensils"></i></strong> ?</p>
+            </div>
             {% url 'account_logout' as action_url %}
-            <form method="post" action="{{ action_url }}" class="form-signout">
+            <form method="post" action="{{ action_url }}" class="form-signout text-center">
                 {% csrf_token %}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
                 {% endif %}
-                <button type="submit" class="btn btn-signout right">{% trans 'Sign Out' %}</button>
+                <button type="submit" class="btn btn-signout">{% trans 'Sign Out' %}</button>
             </form>
         </div>
     </div>

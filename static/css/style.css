@@ -29,7 +29,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #333;
+    background-color: rgb(78, 78, 78);
     color: #fff;
 }
 
@@ -216,7 +216,23 @@ main-bg {
     font-size: 20px;
 }
 
-.about-me,
-.contact-me {
-    margin-top: 20px;
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    font-family: Lato, sans-serif;
+}
+
+.footer h5 {
+    font-weight: 550;
+}
+
+.footer-h4 {
+    font-weight: 600;
+    margin-bottom: 40px;
 }
