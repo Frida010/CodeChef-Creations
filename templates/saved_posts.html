@@ -2,17 +2,28 @@
 
 {% block content %}
 <div class="container">
-    <h2>Saved Posts</h2>
+    <h1 class="text-center">Saved Posts</h1>
+
     {% if saved_posts %}
-    <ul>
-        {% for saved_post in saved_posts %}
-        <li>
-            <a href="{% url 'post_detail' slug=saved_post.post.slug %}">{{ saved_post.post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="row justify-content-center my-row">
+        <ul class="list-group">
+            {% for saved_post in saved_posts %}
+            <li class="list-group-item">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h2 class="card-title mx-auto">
+                            <a href="{% url 'post_detail' slug=saved_post.post.slug %}" class="my-post-title">
+                                {{ saved_post.post.title }}
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
     {% else %}
-    <p>You have no saved posts yet!</p>
+    <p class="text-center">You have no saved posts yet!</p>
     {% endif %}
 </div>
 {% endblock content %}
