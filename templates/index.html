@@ -9,15 +9,14 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="#">
+                                <img class="card-img-top" src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src="{{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
@@ -33,12 +32,7 @@
                         </div>
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
-            </div>
-            <div class="row">
-                {% endif %}
                 {% endfor %}
-
             </div>
         </div>
     </div>
@@ -46,14 +40,15 @@
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link"><i class="fa-solid fa-angles-left"></i> Prev</a></li>
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link"><i
+                        class="fa-solid fa-angles-left"></i> Prev</a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link">Next <i class="fa-solid fa-angles-right"></i></a></li>
-
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link">Next <i
+                        class="fa-solid fa-angles-right"></i></a></li>
             {% endif %}
         </ul>
     </nav>
     {% endif %}
 </div>
-{%endblock%}
+{% endblock %}
