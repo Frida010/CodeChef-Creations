@@ -1,5 +1,4 @@
-/* Background styles */
-/* Set background color for entire page */
+/* Background styles --------------------------------*/
 body {
     background-color: #F9FAFC;
     margin: 0;
@@ -10,8 +9,7 @@ body {
     flex-direction: column;
 }
 
-/* Brand or logo styles */
-/* Define style for brand or logo element */
+/* Brand and logo styles --------------------------------*/
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -23,7 +21,7 @@ body {
     margin-bottom: auto;
 }
 
-/* Background colors */
+/* Background colors --------------------------------*/
 .light-bg {
     background-color: #fff;
 }
@@ -37,20 +35,17 @@ main-bg {
     background-color: #F9FAFC;
 }
 
-/* Card styles */
-/* Define styles for elements with the 'card' class */
+/* Card styles --------------------------------*/
 .card {
     border: none;
     background-color: transparent;
 }
 
-/* Image styles */
-/* Define styles for an image container */
+/* Image styles --------------------------------*/
 .image-container {
     position: relative;
 }
 
-/* Define styles for an 'image-flash' element */
 .image-flash {
     position: absolute;
     bottom: 10%;
@@ -61,32 +56,27 @@ main-bg {
 
 .card-img-top {
     width: 100%;
-    height: 700px; 
+    height: 700px;
 }
 
-
-/* Author styles */
-/* Define styles for an author's name */
+/* Author styles --------------------------------*/
 .author {
     color: white;
     margin: 4px;
     text-transform: uppercase;
 }
 
-/* Link styles */
-/* Define styles for post links */
+/* Link styles --------------------------------*/
 .post-link {
     text-decoration: none;
     color: #445261;
 }
 
-/* Define styles for post links on hover and other page links */
 .post-link:hover,
 .page-link {
     color: #808994;
 }
 
-/* Define styles for post titles and subtitles */
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
@@ -107,7 +97,6 @@ main-bg {
     text-decoration: none;
 }
 
-/* Sign In link styles */
 .my-link {
     color: #6b8e23;
     text-decoration: underline;
@@ -117,15 +106,13 @@ main-bg {
     color: #808994;
 }
 
-/* Button styles */
-/* Define styles for 'Sign Up' and 'Sign Out' buttons */
+/* Button styles --------------------------------*/
 .btn-signup,
 .btn-signout {
     background-color: #6b8e23;
     color: #fff;
 }
 
-/* Define styles for the 'Sign Up' and 'Sign Out' buttons on hover and when active */
 .btn-signup:hover,
 .btn-signup:active,
 .btn-signout:hover,
@@ -134,15 +121,12 @@ main-bg {
     color: #6b8e23;
 }
 
-/* Like button styles */
-/* Define styles for 'Like' buttons */
 .btn-like {
     color: #e81010;
     border: none;
     background: transparent;
 }
 
-/* Define styles for 'Like' buttons on hover and when active */
 .btn-like:hover,
 .btn-like:active {
     color: #e81010;
@@ -150,6 +134,7 @@ main-bg {
     border: none;
 }
 
+/* My own styles --------------------------------*/
 .my-row {
     padding-top: 10px;
 }
@@ -165,14 +150,7 @@ main-bg {
     color: #4a611d;
 }
 
-@media (min-width: 768px) {
-    .col-md-12 {
-        width: auto;
-    }
-}
-
-/* Save button */
-
+/* Save button --------------------------------*/
 .btn-save {
     color: #808994;
     border: none;
@@ -197,8 +175,7 @@ main-bg {
     color: #808994;
 }
 
-/* Footer, and footer content */
-
+/* Footer styles --------------------------------*/
 .footer {
     padding: 20px 0;
     text-align: center;
@@ -237,13 +214,12 @@ main-bg {
     margin-bottom: 40px;
 }
 
-
+/* Responsive image styles --------------------------------*/
 img.post-card-img-top {
     display: block;
     width: 100%;
     height: auto;
 }
-
 
 .image-container {
     max-height: 600px;
@@ -260,12 +236,45 @@ img.post-card-img-top {
     object-fit: contain;
 }
 
-
+/* Media queries for responsive design --------------------------------*/
 @media screen and (max-width: 1600px) {
+    .image-container {
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
     .image-container {
         max-height: 400px;
     }
 }
 
+@media screen and (max-width: 1120px) {
+    .image-container {
+        max-height: 300px;
+    }
+}
 
+@media screen and (max-width: 990px) {
+    .image-container {
+        max-height: 400px;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .image-container {
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .image-container {
+        max-height: 300px;
+    }
+}
