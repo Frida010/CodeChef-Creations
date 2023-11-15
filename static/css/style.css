@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 
-/* Brand and logo styles --------------------------------*/
+/* Brand styles --------------------------------*/
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -44,19 +44,33 @@ main-bg {
 /* Image styles --------------------------------*/
 .image-container {
     position: relative;
+    overflow: hidden;
+}
+
+.image-container .card-img-top {
+    transition: filter 0.3s ease-in-out;
+}
+
+.image-container:hover .card-img-top {
+    filter: brightness(1);
 }
 
 .image-flash {
     position: absolute;
-    bottom: 10%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #6b8e23;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.301);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.card-img-top {
-    width: 100%;
-    height: 700px;
+.image-container:hover .image-flash {
+    opacity: 1;
 }
 
 /* Author styles --------------------------------*/
@@ -140,15 +154,18 @@ main-bg {
 }
 
 .my-category-name,
-.my-post-title {
+.my-post-title,
+.my-page-link {
     color: #6b8e23;
     text-decoration: none;
 }
 
 .my-category-name:hover,
-.my-post-title:hover {
+.my-post-title:hover,
+.my-page-link:hover {
     color: #4a611d;
 }
+
 
 /* Save button --------------------------------*/
 .btn-save {
@@ -180,6 +197,7 @@ main-bg {
     padding: 20px 0;
     text-align: center;
     margin-top: auto;
+    font-family: Lato, sans-serif;
 }
 
 .social-icons {
@@ -201,9 +219,6 @@ main-bg {
     margin-bottom: 5px;
 }
 
-.footer {
-    font-family: Lato, sans-serif;
-}
 
 .footer h5 {
     font-weight: 550;
@@ -278,3 +293,4 @@ img.post-card-img-top {
         max-height: 300px;
     }
 }
+

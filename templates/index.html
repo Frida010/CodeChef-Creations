@@ -36,15 +36,16 @@
             </div>
         </div>
     </div>
+    <!-- Pagination -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link"><i
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link my-page-link"><i
                         class="fa-solid fa-angles-left"></i> Prev</a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link">Next <i
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link my-page-link">Next <i
                         class="fa-solid fa-angles-right"></i></a></li>
             {% endif %}
         </ul>
