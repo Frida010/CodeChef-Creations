@@ -1,8 +1,8 @@
 # CodeChef Creations
 
-Welcome to CodeChef Creations, on this Django-based blogging website you will be albe to read posts/recipes that the **CodeChef** uploads on the blog. 
-The application gives the website visitor the opportunity to read blog posts with healthy recipes, in order to be able to code all day. 
-The recipes are adapted to code, and contain references and style you recognize if you are familiar with programming. 
+Welcome to CodeChef Creations, on this Django-based blogging website you will be albe to read posts/recipes that the **CodeChef** uploads on the blog.
+The application gives the website visitor the opportunity to read blog posts with healthy recipes, in order to be able to code all day.
+The recipes are adapted to code, and contain references and style you recognize if you are familiar with programming.
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ To use CodeChef Creations, you don't need an account. However, if you want to en
 2. Browse through the various posts available on the website.
 3. Click on any post that interests you to read more about it.
 4. If you want to engage with other users, sign up for an account so you can leave comments and like posts.
-5. If you are interested in a specific type of blog post, such as Heatly salads, you can check out that category and find something you like. 
+5. If you are interested in a specific type of blog post, such as Heatly salads, you can check out that category and find something you like.
 
 ## Features
 
