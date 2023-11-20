@@ -28,11 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-# DEBUG = False
-
-# X_FRAME_OPTIONS= 'SAMEORIGIN'
+X_FRAME_OPTIONS= 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['8000-frida010-codechef-creati-hbxdk2qii1.us2.codeanyapp.com',
                  'codechef-creations-aedba97ffd5b.herokuapp.com', 'localhost']
