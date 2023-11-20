@@ -36,7 +36,7 @@
                     </p>
                     <div class="row">
                         <!-- Like button -->
-                        <div class="col-1">
+                        <div class="col-1 my-col-1 like-btn">
                             <strong>
                                 {% if user.is_authenticated %}
                                 <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
@@ -52,14 +52,14 @@
                             </strong>
                         </div>
                         <!-- Comment icon -->
-                        <div class="col-1">
+                        <div class="col-1 comment-btn">
                             {% with comments.count as total_comments %}
                             <strong class="text-secondary"><i class="far fa-comments"></i>
                                 {{ total_comments }}</strong>
                             {% endwith %}
                         </div>
                         <!-- Bookmark button -->
-                        <div class="col-1">
+                        <div class="col-1 bookmark-btn">
                             <strong>
                                 {% if user.is_authenticated %}
                                 <form class="d-inline" action="{% url 'toggle_saved' post.id %}" method="POST" id="saveForm">
