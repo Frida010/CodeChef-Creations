@@ -73,6 +73,9 @@ To like posts, follow these steps:
 
 ## Testing
 
+For detailed information about testing, please refer to the [Testing Documentation](TESTING.md).The document contains test cases for the CodeChef Creations website, covering user authentication, blog post management, comments, likes, post categorization, saving posts, user interface and experience, as well as security aspects such as authentication security and protection against unauthorized access. The tests also include responsive design and easy navigation.
+
+
 ### Bugs
 
 ### Solved Bugs
@@ -80,8 +83,6 @@ To like posts, follow these steps:
 ### Remaining Bugs
 
 ### Validator Testing
-
-Results are documented here.
 
 ## Deployment
 
