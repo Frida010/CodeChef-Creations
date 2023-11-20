@@ -152,6 +152,20 @@ main-bg {
 .comment-btn,
 #bookmarkIcon {
     margin: 30px;
+    font-size: 15px;
+}
+
+.like-container {
+    display: flex;
+    align-items: center;
+}
+
+.like-container .btn-like {
+    margin-right: 6px;
+}
+
+.like-container .far.fa-comments {
+    margin-right: 6px;
 }
 
 /* My own styles --------------------------------*/
@@ -280,23 +294,11 @@ img.post-card-img-top {
     .image-container {
         max-height: 400px;
     }
-
-    .like-btn,
-    .comment-btn,
-    #bookmarkIcon {
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width: 767px) {
     .image-container {
         max-height: 500px;
-    }
-    
-    .like-btn,
-    .comment-btn,
-    #bookmarkIcon {
-        font-size: 24px;
     }
 }
 
@@ -311,4 +313,6 @@ img.post-card-img-top {
         max-height: 300px;
     }
 }
+
+
 

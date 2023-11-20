@@ -38,6 +38,7 @@
                         <!-- Like button -->
                         <div class="col-1 my-col-1 like-btn">
                             <strong>
+                                <div class="like-container">
                                 {% if user.is_authenticated %}
                                 <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                     {% csrf_token %}
@@ -49,15 +50,19 @@
                                 <span class="text-secondary"><i class="far fa-heart"></i></span>
                                 {% endif %}
                                 <span class="text-secondary">{{ post.number_of_likes }} </span>
+                                </div>
                             </strong>
                         </div>
                         <!-- Comment icon -->
                         <div class="col-1 comment-btn">
-                            {% with comments.count as total_comments %}
-                            <strong class="text-secondary"><i class="far fa-comments"></i>
-                                {{ total_comments }}</strong>
-                            {% endwith %}
+                            <strong class="text-secondary like-container">
+                                <i class="far fa-comments"></i>
+                                {% with comments.count as total_comments %}
+                                {{ total_comments }}
+                                {% endwith %}
+                            </strong>
                         </div>
+
                         <!-- Bookmark button -->
                         <div class="col-1 bookmark-btn">
                             <strong>
