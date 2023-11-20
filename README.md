@@ -70,10 +70,59 @@ To like posts, follow these steps:
 4. The heart icon will turn red, indicating your like.
 5. The like count will increase with each like.
 
+## Post Detail Page
+
+The Post Detail page provides users with a comprehensive view of an individual blog post, offering a rich and immersive experience. Here's a breakdown of the key components:
+
+### Blog Post Content
+
+The main body of the page displays the entire blog post, allowing users to read through the content seamlessly. It includes text, images, and any other media that contributes to the post.
+
+### Featured Image
+
+Each blog post is accompanied by a visually appealing featured image. This image serves as a preview and sets the tone for the content within the post.
+
+### Comments Section
+
+Users can engage in discussions and share their thoughts by scrolling down to the comments section. Here, they can read existing comments, post their own, and interact with other community members.
+
+### Likes and Bookmarks
+
+For user engagement, the page displays the number of likes the post has received. Users can express their appreciation for the content by clicking the heart icon. Additionally, the bookmark icon allows users to save the post for later reference.
+
+### Responsive Design
+
+Ensuring a consistent and visually pleasing experience across various devices, the Post Detail page is designed with responsiveness in mind. Whether viewed on a desktop, tablet, or smartphone, users can enjoy an optimized layout and readability.
+
+### Interaction Features
+
+The page incorporates interactive elements, such as the ability to like a post, leave comments, and bookmark content. These features aim to foster community engagement and make the user experience more dynamic.
+
+## Categories Page
+
+The All Categories page serves as a centralized hub where users can discover and explore the diverse range of topics covered on the blog. Here's a more detailed overview of the key features:
+
+### Category Listing
+
+The page prominently displays a list of all available categories, each clickable and leading to a dedicated page showcasing blog posts exclusively within that category. This ensures a streamlined and organized approach to content discovery.
+
+### Category-Specific Navigation
+
+Once a user clicks on a specific category, they are redirected to a dedicated page displaying all blog posts associated with that category. This page maintains consistent navigation options, allowing users to seamlessly switch between categories or return to the All Categories page.
+
+### Responsive Design
+
+Similar to other pages on the site, the Categories page is designed to be responsive, ensuring a visually appealing and user-friendly experience across various devices.
+
+### Call to Explore
+
+Conclude the description with a call to action, prompting users to dive into the categories that pique their interest. Encourage them to explore, engage, and discover the wealth of content available on CodeChef Creations.
+
+In summary, the Categories Page is a gateway to a world of diverse topics, offering users an organized and visually engaging way to navigate through the blog's extensive content.
 
 ## Testing
 
-For detailed information about testing, please refer to the [Testing Documentation](TESTING.md).The document contains test cases for the CodeChef Creations website, covering user authentication, blog post management, comments, likes, post categorization, saving posts, user interface and experience, as well as security aspects such as authentication security and protection against unauthorized access. The tests also include responsive design and easy navigation.
+For detailed information about testing, please refer to the [Testing Documentation](TESTING.md). The document contains test cases for the CodeChef Creations website, covering user authentication, blog post management, comments, likes, post categorization, saving posts, user interface and experience, as well as security aspects such as authentication security and protection against unauthorized access. The tests also include responsive design and easy navigation.
 
 
 ### Bugs
