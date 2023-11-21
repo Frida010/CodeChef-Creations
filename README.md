@@ -29,6 +29,8 @@ Using CodeChef Creations is a breeze! While an account is not mandatory for brow
 * The navigation employs a clean and modern font, with a color that contrasts the background.
 * Clear navigation guides users to easily find what they are looking for.
 
+![Screenshot of the websites homepage](https://user-images.githubusercontent.com/129947589/284567988-f6865f1c-9c4b-4dd4-9b90-b5d25dd9ae54.png)
+
 ## User Guide
 
 ### Creating an Account
@@ -50,6 +52,10 @@ To leave comments, follow these steps:
 5. Your comment is awaiting approval from the admin.
 6. Once approved, the comment will be displayed on the blog, and the comment count will increase under the comment icon next to the heart and save icons.
 
+![Screenshot of leaving a comment](https://user-images.githubusercontent.com/129947589/284568114-7c51f980-5185-4120-9bd0-509aecfd3963.png)
+![Screenshot of comment awaiting approval](https://user-images.githubusercontent.com/129947589/284568141-268753f8-7dc8-4f78-97a8-a0d9c32d244f.png)
+![Screenshot of comment approved and live on the blog](https://user-images.githubusercontent.com/129947589/284568212-597718ce-041b-4890-9c1b-19e7cf7d5954.png)
+
 ### Saving Posts
 
 To save posts, follow these steps:
@@ -60,6 +66,8 @@ To save posts, follow these steps:
 4. Access all your saved posts by clicking the **Saved Posts** link in the navbar.
 5. To unsave a blog post, click the bookmark icon again.
 
+![Screenshot of saving a post](https://user-images.githubusercontent.com/129947589/284568275-cf568a49-a652-4d53-9bd9-44d8a3e4fe6f.png)
+
 ### Liking Posts
 
 To like posts, follow these steps:
@@ -69,6 +77,8 @@ To like posts, follow these steps:
 3. Click the heart icon to like the post.
 4. The heart icon will turn red, indicating your like.
 5. The like count will increase with each like.
+
+![Screenshot of liking a post](https://user-images.githubusercontent.com/129947589/284568308-cd64e616-afcd-4ef0-8f29-9cd6fe2d3138.png)
 
 ## Post Detail Page
 
@@ -99,6 +109,8 @@ Ensuring a consistent and visually pleasing experience across various devices, t
 The page incorporates interactive elements, such as the ability to like a post, leave comments, and bookmark content. These features aim to foster community engagement and make the user experience more dynamic.
 
 ## Categories Page
+
+![Screenshot of categories page](https://user-images.githubusercontent.com/129947589/284569392-fbe0997e-aa48-4838-aa19-ca2dbc9b0d56.png)
 
 The All Categories page serves as a centralized hub where users can discover and explore the diverse range of topics covered on the blog. Here's a more detailed overview of the key features:
 
@@ -139,6 +151,8 @@ Media queries are instrumental in tailoring styles to accommodate diverse screen
 By combining Bootstrap's responsive features with my custom media queries, the website delivers a visually appealing and user-friendly experience across a spectrum of devices.
 
 ## Admin Panel
+
+![Screenshot of the admin panel](https://user-images.githubusercontent.com/129947589/284569448-e3897f60-51d2-43f5-bfca-b37d2d07f271.png)
 
 The Admin Panel is a powerful tool for managing and overseeing various aspects of the website. Below is a brief overview of how the Admin Panel works on my website:
 
