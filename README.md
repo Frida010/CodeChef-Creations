@@ -268,6 +268,12 @@ For validation details, you can visit the [W3C validator](https://validator.w3.o
 ### CSS
 - No errors were returned from the official CSS validator[(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+### Python
+
+### Django
+
+### JavaScript
+
 ## Deployment
 
 CodeChef Creations is deployed using Code Institute's terminal for Heroku, ensuring a smooth and accessible experience for users.
