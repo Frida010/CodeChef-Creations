@@ -261,11 +261,12 @@ While the website has undergone thorough testing and validation, there is an ong
 ![Screenshot of lighthouse testing](https://user-images.githubusercontent.com/129947589/284587284-25f96f3a-5f15-4d86-947d-39a28540ca8b.png)
 
 ### HTML
-[W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F)
+- During the validation process with the official W3C validator, the reported errors were related to missing alt attributes for the images. However, I made a deliberate choice not to address this issue. The images are rendered through Django code, making it challenging to assign specific alt attributes to them.
+  
+For validation details, you can visit the [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F). Please note that while the absence of alt attributes may result in validation errors, this decision was made considering the unique rendering process involving Django.
 
 ### CSS
-[(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
+- No errors were returned from the official CSS validator[(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## Deployment
 
@@ -277,4 +278,18 @@ CodeChef Creations is deployed using Code Institute's terminal for Heroku, ensur
   3. Link the Heroku app to the repository.
   4. Click on **Deploy** to make your app live.
 
-## Credits
+## Content
+During the development of this webpage, I drew inspiration and guidance from [Code Institute](https://codeinstitute.net/), utilizing their comprehensive video content and course materials.
+
+To reinforce my understanding and implementation of certain code segments on the website, I referred to the helpful resources provided by  [W3Schools](https://www.w3schools.com/).
+
+## Media
+The aesthetic elements of this website are enriched by resources from the following:
+
+**Icons:** All icons featured on the website are sourced from [Font Awesome](https://fontawesome.com/), contributing to a visually appealing and consistent design.
+
+**Images:** The visual content on the website is curated from [Pexels](https://www.pexels.com/), ensuring high-quality and captivating visuals that enhance the overall user experience.
+
+**Recipes:**
+The collection of recipes showcased on this platform originates from reputable culinary sources, namely [Köket.se](https://www.koket.se/), [Arla.se](https://www.arla.se/), [Ica.se](https://www.ica.se/recept/), and [Coop.se](https://www.coop.se/recept/). To make these recipes accessible to a broader audience, they have undergone a process of translation to English. Additionally, an AI-driven adaptation ensures that they align seamlessly with the platform's distinctive code style.
+
