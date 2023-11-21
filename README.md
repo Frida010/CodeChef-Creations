@@ -120,6 +120,61 @@ Conclude the description with a call to action, prompting users to dive into the
 
 In summary, the Categories Page is a gateway to a world of diverse topics, offering users an organized and visually engaging way to navigate through the blog's extensive content.
 
+## Responsive Design
+
+Ensuring a seamless viewing experience on a variety of devices is a top priority for my website. Employing a combination of Bootstrap and custom CSS code, I've implemented responsive design principles to enhance usability. Here's an overview of how the website adapts to different screen sizes:
+
+### Media Queries
+
+Media queries are instrumental in tailoring styles to accommodate diverse screen dimensions. Consider this example where the height of the .image-container is adjusted for screens with a maximum width of 767 pixels:
+
+```css
+@media screen and (max-width: 767px) {
+    .image-container {
+        max-height: 500px;
+    }
+}
+```
+
+By combining Bootstrap's responsive features with my custom media queries, the website delivers a visually appealing and user-friendly experience across a spectrum of devices.
+
+## Admin Panel
+
+The Admin Panel is a powerful tool for managing and overseeing various aspects of the website. Below is a brief overview of how the Admin Panel works on my website:
+
+### Category
+
+- **Name:** The name of the category.
+- **Description:** A detailed description of the category.
+
+### Post
+
+- **Title:** The title of the blog post.
+- **Slug:** A unique identifier for the post in the URL.
+- **Categories:** Assign one or more categories to the post.
+- **Author:** The author of the post.
+- **Featured Image:** The main image associated with the post (using CloudinaryField).
+- **Excerpt:** A brief summary or teaser of the post.
+- **Content:** The main content of the post.
+- **Status:** Draft or Published.
+- **Likes:** Users who have liked the post.
+
+### Comment
+
+- **Post:** The post to which the comment belongs.
+- **Name:** The name of the commenter.
+- **Email:** The email address of the commenter.
+- **Body:** The actual comment text.
+- **Created On:** Date and time when the comment was created.
+- **Approved:** Whether the comment has been approved for display.
+
+### SavedPost
+
+- **User:** The user who saved the post.
+- **Post:** The post that has been saved by the user.
+
+Admins can efficiently manage, create, edit, and delete instances of these models through the intuitive Django Admin Panel. This ensures smooth control and organization of the website's content and user interactions.
+
 ## Testing
 
 For detailed information about testing, please read the [Testing Documentation](TESTING.md). The document contains test cases for the CodeChef Creations website, covering user authentication, blog post management, comments, likes, post categorization, saving posts, user interface and experience, as well as security aspects such as authentication security and protection against unauthorized access. The tests also include responsive design and easy navigation.
