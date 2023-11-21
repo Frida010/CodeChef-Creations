@@ -122,16 +122,82 @@ In summary, the Categories Page is a gateway to a world of diverse topics, offer
 
 ## Testing
 
-For detailed information about testing, please refer to the [Testing Documentation](TESTING.md). The document contains test cases for the CodeChef Creations website, covering user authentication, blog post management, comments, likes, post categorization, saving posts, user interface and experience, as well as security aspects such as authentication security and protection against unauthorized access. The tests also include responsive design and easy navigation.
+For detailed information about testing, please read the [Testing Documentation](TESTING.md). The document contains test cases for the CodeChef Creations website, covering user authentication, blog post management, comments, likes, post categorization, saving posts, user interface and experience, as well as security aspects such as authentication security and protection against unauthorized access. The tests also include responsive design and easy navigation.
 
+## Bugs
 
-### Bugs
+List of bugs and issues identified during development:
 
-### Solved Bugs
+#### 1. Issue with Image Sizes
 
-### Remaining Bugs
+* **Description:** Images appear distorted and unattractive on smaller screen sizes, impacting the overall aesthetics of the website.
+* **Steps to Reproduce:** Replicate the issue by viewing the website on devices with smaller screens and in Devtools.
+* **Resolution:** Implemented media queries for responsive design and applied appropriate styles to ensure images adapt seamlessly to different screen sizes.
+* **Expected Behavior:** Images should dynamically adjust based on screen size, transitioning from a three-in-a-row layout to two and finally a single column as the screen size decreases.
+* **Actual Behavior:** Prior to the fix, images were not responsive, resulting in distortion and reduced visibility on smaller screens.
+* **Status:** Closed.
 
-### Validator Testing
+#### 2. Issue with Icons on Smaller Screens
+
+* **Description:** Icons for like, comment, and save actions appear distorted and clustered on smaller screen sizes, significantly impacting the overall visual appeal and usability of the website.
+* **Steps to Reproduce:** Experience the issue by accessing the website on devices with smaller screens and in Devtools to simulate various screen sizes.
+* **Resolution:** Implemented responsive design updates and adjusted styles in the CSS file to ensure icons display appropriately on all screen sizes.
+* **Expected Behavior:** Icons should maintain clarity, proper spacing, and legibility, providing users with a visually pleasing and functional interface, regardless of the screen size.
+* **Actual Behavior:** Prior to resolution, the icons failed to adapt effectively to smaller screens, resulting in clustering where icons overlapped, leading to a diminished user experience.
+* **Status:** Closed.
+
+#### 3. Issue with Save Icon State
+
+* **Description:** The save functionality works as intended; however, there is an issue with the save icon state not updating as expected.
+* **Steps to Reproduce:**
+   1. Navigate to a post on the website.
+   2. Click on the save icon to save the post.
+   3. Observe the state of the save icon.
+* **Expected Behavior:** The save icon should change to a filled state upon clicking, indicating that the post has been saved. The filled icon should persist as long as the user has the post saved.
+* **Actual Behavior:** After clicking the save icon, the filled state is not consistently applied. Additionally, the filled state does not persist when navigating away from the post or upon refreshing the page.
+* **Status:** Open.
+
+## Solved Bugs
+
+List of bugs that have been successfully resolved:
+
+#### 1. Issue with Image Sizes
+
+* **Description:** Images appeared distorted on smaller screen sizes.
+* **Resolution:** Implemented media queries for responsive design.
+* **Status:** Closed.
+
+#### 2. Issue with Icons on Smaller Screens
+
+* **Description:** Icons for like, comment, and save actions appeared distorted on smaller screen sizes.
+* **Resolution:** Implemented responsive design updates and adjusted CSS styles.
+* **Status:** Closed.
+
+## Remaining Bugs
+
+List of bugs that still need attention:
+
+#### 1. Issue with Save Icon State
+
+* **Description:** The save icon state does not consistently update as expected.
+* **Steps to Reproduce:**
+   1. Navigate to a post on the website.
+   2. Click on the save icon to save the post.
+   3. Observe the state of the save icon.
+* **Expected Behavior:** The save icon should change to a filled state upon clicking, indicating that the post has been saved. The filled icon should persist as long as the user has the post saved.
+* **Actual Behavior:** After clicking the save icon, the filled state is not consistently applied. Additionally, the filled state does not persist when navigating away from the post or upon refreshing the page.
+* **Status:** Open.
+
+## Validator Testing
+
+[WAVE](https://wave.webaim.org/report#/https://codechef-creations-aedba97ffd5b.herokuapp.com/)
+
+### HTML
+[W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F)
+
+### CSS
+[(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 
 ## Deployment
 
