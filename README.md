@@ -2,8 +2,6 @@
 
 Welcome to CodeChef Creations! This Django-based blogging website offers a unique blend of programming and culinary delights. Explore posts and recipes curated by the **CodeChef** community. Our blog is designed for coding enthusiasts who seek to maintain a healthy lifestyle while spending long hours in front of their screens. The recipes are not only delicious but also infused with programming references and style, making them a delightful read for those familiar with coding.
 
-![Screenshot of the website on different screen sizes]()
-
 ## Getting Started
 
 Using CodeChef Creations is a breeze! While an account is not mandatory for browsing, creating one allows you to engage with the community, leave comments, save posts, and like posts.
@@ -258,8 +256,9 @@ List of bugs that still need attention:
 * **Status:** Open.
 
 ## Validator Testing
+While the website has undergone thorough testing and validation, there is an ongoing commitment to maintaining high standards. Continuous checks using tools such as Devtools Lighthouse and [WAVE](https://wave.webaim.org/report#/https://codechef-creations-aedba97ffd5b.herokuapp.com/) ensure that the website remains accessible, performant, and compliant with web standards.
 
-[WAVE](https://wave.webaim.org/report#/https://codechef-creations-aedba97ffd5b.herokuapp.com/)
+![Screenshot of lighthouse testing](https://user-images.githubusercontent.com/129947589/284587284-25f96f3a-5f15-4d86-947d-39a28540ca8b.png)
 
 ### HTML
 [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F)
