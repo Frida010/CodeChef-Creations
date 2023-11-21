@@ -272,11 +272,32 @@ For validation details, you can visit the [W3C validator](https://validator.w3.o
 
 CodeChef Creations is deployed using Code Institute's terminal for Heroku, ensuring a smooth and accessible experience for users.
 
-* **Steps for deployment:**
-  1. Fork or clone this repository.
-  2. Create a new Heroku app.
-  3. Link the Heroku app to the repository.
-  4. Click on **Deploy** to make your app live.
+## Deployment
+
+CodeChef Creations is deployed using Code Institute's terminal for Heroku, ensuring a smooth and accessible experience for users.
+
+**Steps for deployment:**
+
+1. Create a new external database on ElephantSQL.
+2. Create the Heroku app.
+3. Attach the database.
+4. Prepare our environment and settings.py file.
+5. Get our static and media files stored on Cloudinary.
+
+## Technologies Used
+
+This project leverages a range of technologies to deliver its functionality:
+
+* **Django**: A high-level Python web framework that facilitates rapid development and clean, pragmatic design. In this project, Django serves as the backbone for handling backend logic, routing, and database interactions.
+
+* **Django Libraries**:
+  * `gunicorn`: A WSGI HTTP server for deploying Django applications.
+  * `psycopg`: A PostgreSQL adapter for Python.
+  * `crispy-forms`: A Django package that helps with rendering elegant and consistent HTML forms. It enables easy styling and layout customization for forms in Django projects.
+
+* **Cloudinary**: An image and video management service that enhances media handling in web applications. Cloudinary is seamlessly integrated into this project to efficiently manage and serve images, ensuring a seamless user experience.
+
+* **ElephantSQL**: A PostgreSQL-as-a-Service provider used for hosting the external database.
 
 ## Content
 During the development of this webpage, I drew inspiration and guidance from [Code Institute](https://codeinstitute.net/), utilizing their comprehensive video content and course materials.
