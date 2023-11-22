@@ -2,6 +2,8 @@
 
 Welcome to CodeChef Creations! This Django-based blogging website offers a unique blend of programming and culinary delights. Explore posts and recipes curated by the **CodeChef** community. Our blog is designed for coding enthusiasts who seek to maintain a healthy lifestyle while spending long hours in front of their screens. The recipes are not only delicious but also infused with programming references and style, making them a delightful read for those familiar with coding.
 
+For a live demonstration of CodeChef Creations, visit [this link](https://codechef-creations-aedba97ffd5b.herokuapp.com/).
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -417,9 +419,20 @@ This project leverages a range of technologies to deliver its functionality:
 * **ElephantSQL**: A PostgreSQL-as-a-Service provider used for hosting the external database.
 
 # Content
-During the development of this webpage, I drew inspiration and guidance from [Code Institute](https://codeinstitute.net/), utilizing their comprehensive video content and course materials.
 
-To reinforce my understanding and implementation of certain code segments on the website, I referred to the helpful resources provided by  [W3Schools](https://www.w3schools.com/).
+Throughout the development of this webpage, I drew inspiration and guidance from various sources to enhance my skills and create a robust blogging platform. Here are some key resources that played a pivotal role:
+
+1. [Code Institute](https://codeinstitute.net/): Code Institute provided a structured learning path with comprehensive video content and course materials. The lessons on Full Stack Farmeworks greatly aided in implementing the website.
+
+2. [W3Schools](https://www.w3schools.com/): W3Schools served as a valuable reference for mastering HTML, CSS, JavaScript, Python, Django and Bootstrap. I particularly found their explanations on Django to be clear and practical when working on this project.
+
+3. [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/): Bootstrap's official documentation was instrumental in creating a responsive and visually appealing design.
+
+4. [Django Documentation](https://docs.djangoproject.com/en/4.2/): Django's documentation proved indispensable for building the backend of the blog. The sections on [authentication](https://docs.djangoproject.com/en/4.2/topics/auth/) and [models](https://docs.djangoproject.com/en/4.2/topics/db/models/) offered valuable insights that directly influenced the structure of the website.
+
+5. [Real Python](https://realpython.com/): Real Python's articles provided in-depth explanations on [specific topic], which greatly contributed to the efficiency and readability of the codebase. The practical examples were particularly helpful in implementing this website.
+
+6. [Django GitHub Repository](https://github.com/django/django): Exploring Django's GitHub repository offered a deep dive into the framework's source code. This not only provided inspiration but also guided decisions when working on this project.
 
 # Media
 The aesthetic elements of this website are enriched by resources from the following:
