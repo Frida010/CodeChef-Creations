@@ -150,7 +150,7 @@ main-bg {
 
 .like-btn,
 .comment-btn,
-#bookmarkIcon {
+.bookmark-btn {
     margin: 30px;
     font-size: 15px;
 }
@@ -198,10 +198,6 @@ main-bg {
 .btn-save:hover,
 .btn-save:active {
     color: #4a611d;
-}
-
-.fa-bookmark {
-    font-size: 18px;
 }
 
 .saved .fa-bookmark {
