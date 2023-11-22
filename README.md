@@ -2,6 +2,25 @@
 
 Welcome to CodeChef Creations! This Django-based blogging website offers a unique blend of programming and culinary delights. Explore posts and recipes curated by the **CodeChef** community. Our blog is designed for coding enthusiasts who seek to maintain a healthy lifestyle while spending long hours in front of their screens. The recipes are not only delicious but also infused with programming references and style, making them a delightful read for those familiar with coding.
 
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Design Philosophy](#design-philosophy)
+- [Features](#features)
+- [User Guide](#user-guide)
+- [Post Detail Page](#post-detail-page)
+- [Categories Page](#categories-page)
+- [Responsive Design](#responsive-design)
+- [Admin Panel](#admin-panel)
+- [Testing](#testing)
+- [Solved Bugs](#solved-bugs)
+- [Remaining Bugs](#remaining-bugs)
+- [Validator Testing](#validator-testing)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies-used)
+- [Content](#content)
+- [Media](#media)
+
 ## Getting Started
 
 Using CodeChef Creations is a breeze! While an account is not mandatory for browsing, creating one allows you to engage with the community, leave comments, save posts, and like posts.
@@ -13,6 +32,8 @@ Using CodeChef Creations is a breeze! While an account is not mandatory for brow
 3. Click on any post that piques your interest to delve deeper into its contents.
 4. To actively engage with the community, sign up for an account and unlock the ability to leave comments, save posts, and like posts.
 5. Explore specific interests by navigating through categories such as Healthy Salads to find posts that align with your preferences.
+
+![Screenshot of the websites homepage](https://user-images.githubusercontent.com/129947589/284567988-f6865f1c-9c4b-4dd4-9b90-b5d25dd9ae54.png)
 
 # Design Philosophy
 
@@ -77,7 +98,7 @@ These adjustments contribute to a more intuitive and seamless browsing experienc
 * The navigation employs a clean and modern font, with a color that contrasts the background.
 * Clear navigation guides users to easily find what they are looking for.
 
-![Screenshot of the websites homepage](https://user-images.githubusercontent.com/129947589/284567988-f6865f1c-9c4b-4dd4-9b90-b5d25dd9ae54.png)
+![Screenshot of the header](https://user-images.githubusercontent.com/129947589/284935409-cdfe9bcc-b104-4d98-8773-24b16334b338.png)
 
 # User Guide
 
@@ -197,6 +218,24 @@ Media queries are instrumental in tailoring styles to accommodate diverse screen
 ```
 
 By combining Bootstrap's responsive features with my custom media queries, the website delivers a visually appealing and user-friendly experience across a spectrum of devices.
+
+### iPhone SE
+Screenshots showcasing the blog on an iPhone SE:
+
+![Screenshot of the blog on a iPhone SE](https://user-images.githubusercontent.com/129947589/284940345-b4967f0e-abc8-445a-9131-252166689a2b.png)
+![Screenshot of the blog on a iPhone SE](https://user-images.githubusercontent.com/129947589/284940389-b5788543-5e0c-4d74-a371-888f5e222276.png)
+
+### iPad Air
+Screenshots showcasing the blog on an iPad Air:
+
+![Screenshot of the blog on an iPad Air](https://user-images.githubusercontent.com/129947589/284940439-7bbe47a4-392e-43c9-bf41-bf2f67b4d819.png)
+![Screenshot of the blog on an iPad Air](https://user-images.githubusercontent.com/129947589/284940679-1f5e3b10-6c99-4e47-bc50-350a7bb2a41e.png)
+
+### Nest Hub Max
+Screenshots showcasing the blog on a Nest Hub Max:
+
+![Screenshot of the blog on a Nest Hub Max](https://user-images.githubusercontent.com/129947589/284940601-9017e4c8-80cf-428c-b3f9-ddae1a354d9f.png)
+![Screenshot of the blog on a Nest Hub Max](https://user-images.githubusercontent.com/129947589/284940637-3c64bf1e-e75b-4e80-bf32-08c1afb2d562.png)
 
 # Admin Panel
 
