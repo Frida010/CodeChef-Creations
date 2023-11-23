@@ -13,6 +13,7 @@ For a live demonstration of CodeChef Creations, visit [this link](https://codech
 - [Post Detail Page](#post-detail-page)
 - [Categories Page](#categories-page)
 - [Responsive Design](#responsive-design)
+- [Object-Based Software Concepts](#object-based-software-concepts)
 - [Admin Panel](#admin-panel)
 - [Testing](#testing)
 - [Solved Bugs](#solved-bugs)
@@ -238,6 +239,36 @@ Screenshots showcasing the blog on a Nest Hub Max:
 
 ![Screenshot of the blog on a Nest Hub Max](https://user-images.githubusercontent.com/129947589/284940601-9017e4c8-80cf-428c-b3f9-ddae1a354d9f.png)
 ![Screenshot of the blog on a Nest Hub Max](https://user-images.githubusercontent.com/129947589/284940637-3c64bf1e-e75b-4e80-bf32-08c1afb2d562.png)
+
+# Object-Based Software Concepts
+
+### Category Model:
+#### Usage of Categories in the Application:
+The Category model is employed to organize and categorize blog posts. Each blog post can be assigned one or more categories, facilitating structured and easy navigation for users and aiding them in finding content of interest.
+
+#### Specific Rules or Logic for Categories:
+Currently, there are no specific rules or logic governing categories. They are primarily used as labels to organize content and enhance the user experience of the website.
+
+### Post Model:
+#### Handling and Display of featured_image in Views:
+The featured_image field is part of the Post model and is used to store an image representing the blog post. In views, the selected image is displayed prominently in the blog post interface, contributing to making the post more visually appealing.
+
+#### Special Requirements or Characteristics of the content Field:
+The content field contains the textual content of the blog post. There are no specific requirements for the field, but it can include formatted text, links, and other media elements to make the content rich and engaging.
+
+#### Purpose of the likes Relationship and How It Is Used:
+The likes relationship is a Many-to-Many relation between users and blog posts. It is used to keep track of which users have liked a particular blog post. This enables features such as displaying the number of likes for a post and allowing users to express their interest in specific posts.
+
+### Comment Model:
+#### Handling and Display of Comments in the Application:
+The Comment model is used to store user comments on a specific blog post. In the application, comments are displayed under each blog post, and users can engage in discussions by leaving their own comments.
+
+#### Significance of the approved Field and How It Affects Comment Display:
+The approved field is used to indicate whether a comment has been approved by the administrator to be displayed publicly. If approved is True, the comment is visible on the website. If it is False, the comment is not shown to other users until it has been approved by the administrator.
+
+### SavedPost Model:
+#### Purpose of the SavedPost Model and How It Is Used in the Application:
+The SavedPost model is used to keep track of which posts a user has saved for future reference. Each post that a user saves is created as a new instance of SavedPost. This allows users to easily find and revisit their favorite posts without having to browse through the entire website.
 
 # Admin Panel
 

@@ -5,58 +5,88 @@
 ### Log In
 
 **Test Case:** Verify that users can successfully log in.
+
 **Preconditions:** Users have valid usernames and passwords.
+
 **Steps to Perform:**
 
 1. Visit the login page.
 2. Enter a valid username and password.
 3. Click the "Log In" button.
-**Expected Result:** The user logs in and is redirected to the home page.
+
+**Expected Result:**
+
+- **Positive Scenario:** The user logs in and is redirected to the home page.
+- **Negative Scenario:** Users with invalid credentials receive an appropriate error message, and they are not logged in.
 
 ### Register New User
 
 **Test Case:** Ensure that new users can register for an account.
+
 **Preconditions:** The user does not have an existing account.
+
 **Steps to Perform:**
 
 1. Visit the registration page.
 2. Provide valid registration details.
 3. Click the "Register" button.
-**Expected Result:** The user's account is created, and they are redirected to the login page.
+
+**Expected Result:**
+
+- **Positive Scenario:** The user's account is created, and they are redirected to the login page.
+- **Negative Scenario:** Users attempting to register with invalid or incomplete details receive appropriate error messages.
 
 ## Blog Posts
 
 ### Create a New Blog Post
 
 **Test Case:** Confirm that administrators can create new blog posts.
-**Preconditions:** The administartor is logged in.
+
+**Preconditions:** The administrator is logged in.
+
 **Steps to Perform:**
 
 1. Navigate to the "Admin" panel.
 2. Enter the required details for the new post.
 3. Click the "Publish" button.
-**Expected Result:** The new blog post is created and visible on the blog.
+
+**Expected Result:**
+
+- **Positive Scenario:** The new blog post is created and visible on the blog.
+- **Negative Scenario:** Non-admin users attempting to create a blog post are prevented, and appropriate error messages are displayed.
 
 ### Edit an Existing Blog Post
 
 **Test Case:** Verify that administrators can edit their existing blog posts.
+
 **Preconditions:** The administrator has one or more published blog posts.
+
 **Steps to Perform:**
 
 1. Open the "Admin" panel and select post.
 2. Modify the content or details.
 3. Save the changes.
-**Expected Result:** The changes are applied, and the updated post is visible.
+
+**Expected Result:**
+
+- **Positive Scenario:** The changes are applied, and the updated post is visible.
+- **Negative Scenario:** Non-admin users attempting to edit a blog post are prevented, and appropriate error messages are displayed.
 
 ### Delete a Blog Post
 
 **Test Case:** Ensure that administrators can delete their own blog posts.
+
 **Preconditions:** The administrator has one or more published blog posts.
+
 **Steps to Perform:**
 
 1. Open the "Admin" page and select a post.
 2. Confirm the deletion.
-**Expected Result:** The post is deleted and no longer appears on the blog.
+
+**Expected Result:**
+
+- **Positive Scenario:** The post is deleted and no longer appears on the blog.
+- **Negative Scenario:** Non-admin users attempting to delete a blog post are prevented, and appropriate error messages are displayed.
 
 ## Comments
 
@@ -203,3 +233,4 @@
 1. Try to like, comment or save a post without the necessary permissions.
 2. Attempt to access the admin panel without admin privileges.
 **Expected Result:** Unauthorized actions are prevented, and appropriate error messages are displayed.
+

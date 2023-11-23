@@ -15,9 +15,9 @@
                             <a href="{% url 'post_detail' post.slug  %}" class="post-link">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg">
+                                <img class="card-img-top" src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg" alt="iPhone laying on a table with the text 'Hello' displayed on the screen">
                                 {% else %}
-                                <img class="card-img-top" src="{{ post.featured_image.url }}">
+                                <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }} Featured Image">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
