@@ -380,14 +380,23 @@ List of bugs that still need attention:
 # Validator Testing
 While the website has undergone thorough testing and validation, there is an ongoing commitment to maintaining high standards. Continuous checks using tools such as Devtools Lighthouse and [WAVE](https://wave.webaim.org/report#/https://codechef-creations-aedba97ffd5b.herokuapp.com/) ensure that the website remains accessible, performant, and compliant with web standards.
 
-![Screenshot of lighthouse testing](https://user-images.githubusercontent.com/129947589/284587284-25f96f3a-5f15-4d86-947d-39a28540ca8b.png)
+![Screenshot of lighthouse testing](https://user-images.githubusercontent.com/129947589/285160333-aec670c7-4601-4771-9226-623a999982c9.png)
 
 ### HTML
-- During the validation process with the official W3C validator, the reported errors were related to missing alt attributes for the images. However, I made a deliberate choice not to address this issue. The images are rendered through Django code, making it challenging to assign specific alt attributes to them.
-  
-For validation details, you can visit the [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F). Please note that while the absence of alt attributes may result in validation errors, this decision was made considering the unique rendering process involving Django.
+
+- During the validation process with the official W3C validator, reported errors were related to missing `alt` attributes for the images. Initially, I consciously chose not to address this issue due to the unique rendering process involving Django code, making it challenging to assign specific `alt` attributes to the images.
+
+After conducting further research, I've successfully implemented `alt` attributes for Django-rendered images, resolving the reported problem. As a result, there are no longer any errors returned from the validator testing.
+
+```html
+<img class="post-card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }} Featured Image" width="100%">
+```
+This adjustment ensures that each image now has a descriptive alt attribute, contributing to improved accessibility.
+
+For detailed validation results, you can review the [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F).
 
 ### CSS
+
 - No errors were returned from the official CSS validator[(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodechef-creations-aedba97ffd5b.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Python & Django
