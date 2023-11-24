@@ -309,6 +309,28 @@ The Admin Panel is a powerful tool for managing and overseeing various aspects o
 
 Admins can efficiently manage, create, edit, and delete instances of these models through the intuitive Django Admin Panel. This ensures smooth control and organization of the website's content and user interactions.
 
+# Security
+
+Ensuring the security of my application is a top priority, and I have implemented the following measures to safeguard sensitive information:
+
+#### 1. Password Security
+
+I securely store user passwords using industry-standard cryptographic hashing algorithms. Leveraging Django's built-in authentication system, passwords are hashed and verified.
+
+#### 2. Key Management
+
+Sensitive keys and credentials, such as API keys, are stored in environment variables and never hard-coded in the source code. This prevents accidental exposure of sensitive information in version control or public repositories.
+
+#### 3. HTTPS Usage
+
+My application enforces the use of HTTPS to encrypt data in transit, providing a secure connection between users and my server.
+
+#### 4. User Permissions
+
+I utilize Django's built-in permission system to control access to different parts of the application. Users are granted specific permissions based on their roles.
+
+By implementing these security measures, I aim to provide a secure environment for my users and their data. If you have any security concerns or discover a potential vulnerability, please contact me immediately at **fridaholmlund@icloud.com** .
+
 # Testing
 
 For detailed information about testing, please read the [Testing Documentation](TESTING.md). The document contains test cases for the CodeChef Creations website, covering user authentication, blog post management, comments, likes, post categorization, saving posts, user interface and experience, as well as security aspects such as authentication security and protection against unauthorized access. The tests also include responsive design and easy navigation.
