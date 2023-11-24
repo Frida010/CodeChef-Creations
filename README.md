@@ -15,6 +15,7 @@ For a live demonstration of CodeChef Creations, visit [this link](https://codech
 - [Responsive Design](#responsive-design)
 - [Object-Based Software Concepts](#object-based-software-concepts)
 - [Admin Panel](#admin-panel)
+- [Security](#security)
 - [Testing](#testing)
 - [Solved Bugs](#solved-bugs)
 - [Remaining Bugs](#remaining-bugs)
@@ -23,6 +24,8 @@ For a live demonstration of CodeChef Creations, visit [this link](https://codech
 - [Technologies Used](#technologies-used)
 - [Content](#content)
 - [Media](#media)
+- [Responsible Disclosure](#responsible-disclosure)
+- [Conclusion](#conclusion)
 
 ## Getting Started
 
@@ -507,3 +510,17 @@ The aesthetic elements of this website are enriched by resources from the follow
 The collection of recipes showcased on this platform originates from reputable culinary sources, namely [Köket.se](https://www.koket.se/), [Arla.se](https://www.arla.se/), [Ica.se](https://www.ica.se/recept/), and [Coop.se](https://www.coop.se/recept/). To make these recipes accessible to a broader audience, they have undergone a process of translation from Swedish to English. Additionally, an AI-driven adaptation ensures that they align seamlessly with the platform's distinctive code style.
 
 (Note: Recipes and images are unrelated)
+
+# Responsible Disclosure
+
+I take the security of CodeChef Creations seriously. If you discover any security vulnerabilities or potential issues, I encourage you to practice responsible disclosure. Please report your findings to me immediately through the following channels:
+
+**Email:** fridaholmlund@icloud.com
+
+When reporting security issues, please provide detailed information and steps to reproduce the vulnerability. I appreciate your help in keeping CodeChef Creations safe and secure for all users.
+
+# Conclusion
+
+Thank you for taking the time to explore CodeChef Creations! I hope you find my website interesting and valuable. If you have any questions, suggestions, or just want to say hello, feel free to reach out. Have a wonderful day!
+
+I appreciate your interest and look forward to hearing from you!😊
